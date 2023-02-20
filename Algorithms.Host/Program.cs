@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Algorithms.Host.Helpers;
+using Microsoft.Extensions.DependencyInjection;
+
+var serviceProvider = new ServiceCollection()
+.RegisterServices()
+.BuildServiceProvider();
